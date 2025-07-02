@@ -1,0 +1,21 @@
+function format(n, digits = 2) {
+  return n.toString().padStart(digits, "0");
+}
+
+function updateTimer() {
+  const now = new Date();
+
+  const year = now.getFullYear();
+  const month = format(now.getMonth() + 1);
+  const day = format(now.getDate());
+
+  const hours = format(now.getHours());
+  const minutes = format(now.getMinutes());
+  const seconds = format(now.getSeconds());
+  const milliseconds = format(now.getMilliseconds(), 3);
+
+  const timeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}.${milliseconds}`;
+  document.getElementById("timer").textContent = timeString;
+}
+
+setInterval(updateTimer, 10); // atualiza a cada 10ms
