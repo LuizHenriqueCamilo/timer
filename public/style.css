@@ -1,6 +1,6 @@
 body {
+  background: #333;
   font-family: monospace;
-  background-color: #f2f2f2;
   color: #333;
   display: flex;
   height: 100vh;
@@ -11,10 +11,48 @@ body {
 }
 
 .container {
+  background: #333;
   text-align: center;
+  border: #eee solid 1px;
+  border-radius: 10px;
+  box-shadow: #bdb5b5 0px 0px 10px;
+  padding: 20px;
+}
+
+.timer {
+  font-size: 2rem;
+  margin-top: 10px;
+  border: #eee solid 1px;
+  border-radius: 10px;
+  box-shadow: #eee 0px 0px 10px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  width: fit-content;
+  margin: auto;  
 }
 
 #timer {
   font-size: 2rem;
   margin-top: 10px;
+
 }
+div {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+  background: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  color: white;
+}
+p {
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+}
+

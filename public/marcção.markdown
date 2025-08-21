@@ -15,7 +15,7 @@ function updateTimer() {
   const milliseconds = format(now.getMilliseconds(), 3);
 
   const timeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}.${milliseconds}`;
-  document.getElementById("timer").textContent = timeString;
+  document.getElementById("timerTest").textContent = timeString;
 }
 
 setInterval(updateTimer, 10); // atualiza a cada 10ms
